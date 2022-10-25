@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from GoogleAdsApi.client import Client
+from GoogleAdsWindsorApi.client import Client
 
 
 class TestRequest(unittest.TestCase):
