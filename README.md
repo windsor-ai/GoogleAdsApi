@@ -1,6 +1,6 @@
 # GoogleAdsWindsorApi
 
-`GoogleAdsWindsorApi` is a python package makes it easy to get marketing data from Facebook into python.
+`GoogleAdsWindsorApi` is a python package makes it easy to get marketing data from Google into python.
 
 [Windsor.ai](https://www.windsor.ai/) allows to get marketing data from any platform. It simplifies the complexity of dealing with multiple platforms, unlocking unified, valuable information in a format that matters to you. For more details checkout [onboard.windsor.ai](https://onboard.windsor.ai/).
 
