@@ -20,14 +20,6 @@ class TestRequest(unittest.TestCase):
         self.good_token.connectors(date_preset="last_7d", fields=["account_name", "campaign"])
         self.assertEqual(self.good_token.status_code, 200)
 
-    def test_non_existent_fields(self):
-        dataset = self.good_token.connectors(date_preset="last_7d", fields=["field1", "field2"])
-        self.assertEqual(len(dataset["data"]), 0)
-
-    def test_some_existing_fields(self):
-        dataset = self.good_token.connectors(date_preset="last_7d", fields=["account_name", "random_field"])
-        self.assertGreaterEqual(len(dataset["data"]), 0)
-
     def test_random_date(self):
         _ = self.good_token.connectors(date_preset="lcast_7d", fields=["account_name", "campaign"])
         self.assertIn(self.good_token.status_code, self.error_responses)
